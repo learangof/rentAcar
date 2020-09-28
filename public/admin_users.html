@@ -1,0 +1,122 @@
+<h4 id="id_table_name">Users</h4>
+<div class="table-responsive overflow-auto h-75" style="overflow-y: scroll;">
+    <table id="id_table" class="table table-bordered table-striped">
+        <thead>
+            <tr id="id_table_headers">
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Type </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- Add US-->
+<div id="addModal" class="modal fade px-5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header p-0">
+                <div class="row w-100 m-auto">
+                    <div class="col-12 py-1 px-3">
+                        <div class="row w-100 m-0">
+                            <div class="col-12 p-0">
+                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title text-center mb-2" id="my-modal-title">Add User</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="id_adduser" method="post" action="signup.php" class="mb-0 px-3 py-4" name="signUP">
+                <div class="modal-body px-5">
+                    <!-- Content -->
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_fName">First Name</label>
+                        <div class="col-lg-9">
+                            <input id="u_fName" class="form-control " type="text" name="u_fName"
+                                placeholder="Enter your First Name" value="">
+                            <div class="invalid-feedback">Please fill this field.</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_lName">Last Name</label>
+                        <div class="col-lg-9">
+                            <input id="u_lName" class="form-control " type="text" name="u_lName"
+                                placeholder="Enter your Last Name" value="">
+                            <div class="invalid-feedback">Please fill this field.</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_phone">Phone Number</label>
+                        <div class="col-lg-9">
+                            <input id="u_phone" class="form-control " type="number" name="u_phone"
+                                placeholder="Enter your Phone Number" value="">
+                            <div class="invalid-feedback">Please fill this field properly (10 digits).</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_email">Email</label>
+                        <div class="col-lg-9">
+                            <input id="u_email" class="form-control " type="text" name="u_email"
+                                placeholder="Enter your Email" value="">
+                            <div class="invalid-feedback">Please fill this field properly.</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_pass">Password</label>
+                        <div class="col-lg-9">
+                            <input id="u_pass" class="form-control" type="password" name="u_pass"
+                                placeholder="Enter your Password">
+                            <div class="invalid-feedback">Please fill this field.</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_cPass">Confirm Password</label>
+                        <div class="col-lg-9">
+                            <input id="u_cPass" class="form-control" type="password" name="u_cPass"
+                                placeholder="Enter your Password">
+                            <div class="invalid-feedback">Please fill this field.</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3" for="u_cPass">Type</label>
+                        <div class="col-lg-9">
+                            <select id="u_type" class="form-control" name="u_type">
+                                <option value="2">Customer</option>
+                                <option value="1">Admin</option>
+                              </select>
+                        </div>
+                    </div>
+                    <!-- Finish Content-->
+                </div>
+
+                <div class="modal-footer m-0">
+                    <div class="row align-items-center w-50">
+                        <div class="col-md-6">
+                            <div class="form-group m-auto">
+                                <input class="w-100 btn btn-danger" type="reset" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group m-auto">
+                                <input id="add_user" class="w-100 btn btn-primary" type="submit" value="Add User">
+                                <div class="invalid-feedback">Password does not match.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

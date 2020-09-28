@@ -1,0 +1,162 @@
+<div class="text-white foot-fix footer-copyright bg-secondary text-center py-2 fixed-bottom">
+    <div class="row justify-content-center">
+        <div class="col-11 pl-md-0">
+            <div class="row justify-content-start text-left">
+                <div class="d-none col-lg-2 col-md-2" id="id_contact_us">
+                    <h5>
+                        <a class="text-white text-left" href="#CU" data-toggle="modal">Contact Us</a>
+                    </h5>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <h5>
+                        <a class="text-white text-left" href="#FU" data-toggle="modal">Find Us</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-11 text-right border-top pt-1">
+            <h8>
+                <i class="fas fa-copyright"></i> 2020 Copyright :
+                <a href="https://ileaf.netlify.app" target="_new"> ileaf.com</a>
+            </h8>
+        </div>
+    </div>
+</div>
+
+<!-- Contact US-->
+<div id="CU" class="modal fade px-5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header p-0">
+                <div class="row w-100 m-auto">
+                    <div class="col-12 py-1 px-3">
+                        <div class="row w-100 m-0">
+                            <div class="col-12 p-0">
+                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title text-center mb-2" id="my-modal-title">CONTACT US</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="m-0" method="post" name="contactUS">
+                <div class="modal-body px-5">
+                    <!-- Content -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                    value="" />
+                                <div class="invalid-feedback">Please fill out this field properly.</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *"
+                                    value="" />
+                                <div class="invalid-feedback">Please fill out this field properly.</div>
+                            </div>
+                            <div class="form-group m-0">
+                                <input type="number" name="txtPhone" class="form-control"
+                                    placeholder="Your Phone Number *" value="" />
+                                <div class="invalid-feedback">Please fill out this field with proper NZ phone number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control txt-area h-100"
+                                    placeholder="Your Message *"></textarea>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Finish Content-->
+                </div>
+
+                <div class="modal-footer m-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="form-group m-auto">
+                                <input class="w-100 btn btn-danger" type="reset" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group m-auto">
+                                <button class="w-100 btn btn-primary" data-dismiss="modal" data-toggle="modal"
+                                    data-target="#succesModal">
+                                    <span aria-hidden="true">Send</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Find US-->
+<div id="FU" class="modal fade px-5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header p-0">
+                <div class="row w-100 m-auto">
+                    <div class="col-12 py-1 px-3">
+                        <div class="row w-100 m-0">
+                            <div class="col-12 p-0">
+                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="modal-title text-center mb-2" id="my-modal-title">FIND US</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body px-lg-5 px-md-1">
+
+                <!-- Content -->
+            
+                    <div class="row h-100">
+                        <div class="col h-100">
+                            <div id="id_map">Hols</div>
+                            <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA31nRqd24evKwQTI_IoY-sfAsdg5Sd2oA"></script>
+                            <script src="src/js/map.js"></script>
+                        </div>
+                    </div>
+           
+                <!-- Finish Content-->
+
+            </div>
+
+            <div class="modal-footer m-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="succesModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="text-center">We will answer you as soon as posible</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

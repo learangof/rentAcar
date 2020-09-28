@@ -1,0 +1,54 @@
+<form id="id_signup" method="post" action="signup.php" class="mb-0 px-3 py-4" name="signUP">
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_fName">First Name</label>
+        <div class="col-lg-9">
+            <input id="u_fName" class="form-control " type="text" name="u_fName" placeholder="Enter your First Name"
+                value="">
+            <div class="invalid-feedback">Please fill this field.</div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_lName">Last Name</label>
+        <div class="col-lg-9">
+            <input id="u_lName" class="form-control " type="text" name="u_lName" placeholder="Enter your Last Name"
+                value="">
+            <div class="invalid-feedback">Please fill this field.</div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_phone">Phone Number</label>
+        <div class="col-lg-9">
+            <input id="u_phone" class="form-control " type="number" name="u_phone" placeholder="Enter your Phone Number"
+                value="">
+            <div class="invalid-feedback">Please fill this field properly (10 digits).</div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_email">Email</label>
+        <div class="col-lg-9">
+            <input id="u_email" class="form-control " type="text" name="u_email" placeholder="Enter your Email"
+                value="">
+            <div class="invalid-feedback">Please fill this field properly.</div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_pass">Password</label>
+        <div class="col-lg-9">
+            <input id="u_pass" class="form-control" type="password" name="u_pass" placeholder="Enter your Password">
+            <div class="invalid-feedback">Please fill this field.</div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3" for="u_cPass">Confirm Password</label>
+        <div class="col-lg-9">
+            <input id="u_cPass" class="form-control" type="password" name="u_cPass" placeholder="Enter your Password">
+            <div class="invalid-feedback">Please fill this field.</div>
+        </div>
+    </div>
+    <div class="form-group row mb-0">
+        <div class="col-lg-5 m-auto text-center">
+            <input id="sign_up" class="btn btn-primary col-lg rounded-lg" type="submit" value="Sign Up" name="">
+            <div class="invalid-feedback">Passwords does not match.</div>
+        </div>
+    </div>
+</form>
