@@ -54,12 +54,12 @@ function setHeader(type, name) {
   $("#id_dropdow_profile").removeClass("d-none");
   $("#id_profile_name").html(name);
   if (type === "U") {
-    $("#id_profile_home").addClass("d-none");
-    $("#id_nav_profile").removeClass("justify-content-between");
-    $("#id_nav_profile").addClass("justify-content-end");
     $("#id_contact_us").removeClass("d-none");
   }
+   
   if (type === "A") {
+    $("#id_profile_home").removeClass("d-none");
+    $("#id_nav_profile").addClass("justify-content-between");
     $("#id_nav_profile").addClass("sticky-top");
   }
 }
